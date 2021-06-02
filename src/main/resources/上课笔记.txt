@@ -1,0 +1,24 @@
+1 MINA
+
+
+IoAcceptor name(){
+    new NioSocketAcceptor().var = nio
+    nio.getSessionCg().setReaBufferSize(2222);
+    ...................setIdleTime(Id.Boh,10)
+
+}
+
+
+
+2 JT8080协议
+
+分包项：大文件切分为小文件时，分包项区分
+BCD码：一个手机号包含两个BCD码
+
+协议：
+1）设备注册（0100）：设备安装时，使用此消息通知平台
+2）设备鉴权登陆（0101）
+
+
+
+上机教室：D417

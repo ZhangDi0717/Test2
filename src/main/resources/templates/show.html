@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>show</title>
+</head>
+
+<script type="text/javascript" th:src="@{/js/jquery-3.6.0.min.js}"></script>
+
+<script type="text/javascript">
+    $(function () {
+        setInterval(function () {
+            getData();
+        },1000);
+
+        console.log("进入定时器设置");
+
+        function getData(){
+            $.ajax({
+                type : "post",
+                url : "/getdata",
+                success : function (data){
+                    console.log(data);
+                }
+            })
+        }
+    })
+</script>
+
+
+<body>
+<p th:text="'用户名'+${uid}"></p>
+<p th:text="'用户名称:'+${name}"></p>
+
+
+
+</body>
+</html>
